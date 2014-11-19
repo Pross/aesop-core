@@ -64,7 +64,7 @@ class Aesop_Core {
 		// Activate plugin when new blog is added
 		add_action( 'wpmu_new_blog', array( $this, 'activate_new_site' ) );
 
-		// we are loading this super late so that themes can override shortcode fucntions
+		// we are loading this super late so that themes can override shortcode functions
 		add_action('wp', array($this,'register_shortcodes'),10);
 
 		// enqueue scripts
